@@ -7,14 +7,23 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Mario Chat</title>
 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.2.0/socket.io.js"></script>
-  <link rel="stylesheet" href="/styles.css">
+  <script src="/static/js/socket.io.js"></script>
+  <link rel="stylesheet" href="/static/css/styles.css">
 </head>
 
 <body>
-  <h1>Hello :D</h1>
+  <div id="mario-chat">
+    <div id="chat-window">
+      <div id="output"></div>
+      <div id="feedback"></div>
+    </div>
+    <input type="text" id="handle" placeholder="Handle" />
+    <input type="text" id="message" placeholder="Message" />
+    <button id="send">Send</button>
+  </div>
 
-  <script src="/chat.js"></script>
+  <script src="/static/js/jquery-3.3.1.min.js"></script>
+  <script src="/static/js/chat.js"></script>
 </body>
 
 </html>
