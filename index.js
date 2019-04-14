@@ -12,6 +12,6 @@ var server = app.listen(PORT, () => {
 
 var io = socket(server);
 
-io.on("connection", () => {
-  console.log(`made socket connection`);
+io.on("connection", socket => {
+  console.log(`made socket connection`, socket.id);
 });
